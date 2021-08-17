@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-import keras
+from keras import models
 import pickle
 import plotly.graph_objects as go
 
@@ -20,7 +20,7 @@ def sliding_window(seq, window_size):
 window_size = 10
 
 # Load the model from the file
-model = keras.models.load_model('anomaly_detection')
+model = models.load_model('anomaly_detection')
 
 # load the scaler
 scaler = pickle.load(open('scaler.pkl', 'rb'))
