@@ -1,0 +1,6 @@
+pandas==1.2.4
+numpy==1.19.5
+streamlit==0.84.1
+keras==2.4.3
+pickleshare==0.7.5
+plotly==5.1.0
